@@ -4,7 +4,7 @@ This repository contains the data and R scripts used to explore the site formati
 
 ## Data Sets and Data Preparation
 
-All raw data used in the paper can be found under the FL_data file in the repository, including four csv files and four shapefiles.
+All raw data used in the paper can be found under the FL_data folder in the repository, including four CSV files and four shapefiles.
 
 The file FL_basic data.csv contains the basic information of archaeological finds at FL, including find IDs, trenches, material types, coordinates, altitudes, orientations, inclinations, dimensions, weights, technological category, rock types and degrees of weathering. It is originally published as supplementary materials in the following paper:
 
