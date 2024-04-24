@@ -4,21 +4,21 @@ This repository contains the data and R scripts used to explore the site formati
 
 ## Data Sets and Data Preparation
 
-All raw data used in the paper can be found in the repository, including four csv files and four shapefiles.
+All raw data used in the paper can be found under the FL_data file in the repository, including four csv files and four shapefiles.
 
-The file FL_data.csv is the basic information of archaeological finds at FL, including find IDs, trenchs, material types, coordinates, altitudes, orientations, inclinations, dimensions, weights, technological category, rock types and degrees of weathering. It is originally published as supplementary materials in the following paper:
+The file FL_basic data.csv contains the basic information of archaeological finds at FL, including find IDs, trenches, material types, coordinates, altitudes, orientations, inclinations, dimensions, weights, technological category, rock types and degrees of weathering. It is originally published as supplementary materials in the following paper:
 
 Pei S, Xie F, Deng C, Jia Z, Wang X, Guan Y, et al. (2017) Early Pleistocene archaeological occurrences at the Feiliang site, and the archaeology of human origins in the Nihewan Basin, North China. PLoS ONE 12(11): e0187251. DOP: <https://doi.org/10.1371/journal.pone.0187251>.
 
-The file FL_fabric.csv is the results of fabric strength, flatness index, cluster-girdle index, K index, isotropy index and elongation index. They were calculated with three normalised eigenvectors (S1, S2 and S3) which produced with the long-axis orientation and degrees of objects in the software Stereonet. They will be used in the three-dimentional fabric analysis.
+The file FL_fabric index.csv is the results of fabric strength, flatness index, cluster-girdle index, K index, isotropy index and elongation index. They were calculated with three normalised eigenvectors (S1, S2 and S3) which were produced with the long-axis orientation and degrees of objects in the software Stereonet. They will be used in the three-dimensional fabric analysis.
 
 The folder FL_outline contains shapefiles of trench outlines of FL, digitalising the original excavation maps with ArcGIS software. They will be used in the spatial analysis as observation windows.
 
-Two files, FL_Refit_T1_weight.csv and FL_Refit_TOK_weight.csv, contain information of refit sets found at FL. The IDs, coordinates, altitudes, weights of refitted pieces, as well as distances, orientations, degrees, azimuth and dips of refit lines are presented. They will be used as part of taphonomic analysis.
+Two files, FL_Refit_T1_weight.csv and FL_Refit_TOK_weight.csv, contain information on refit sets found at FL. The IDs, coordinates, altitudes, and weights of refitted pieces, as well as distances, orientations, degrees, azimuth and dips of refit lines are presented. They will be used as part of taphonomic analysis.
 
 ## Taphonomic analysis
 
-Edge rounding, dimensions and refit sets of lithic artefacts were analysed in this part. Bar figures were plotted with ggplot2 to show the composition of rounding groups at each trench and within subgroups (length groups, weight groups and technological groups). Function drawrefits3viewweight.fl() was created to plot the three-dimensional maps of refit lines. The azimuth of refit lines were also plotted as rose diagrams and tested with Rayleigh and Kuiper test.
+Edge rounding, dimensions and refit sets of lithic artefacts were analysed in this part. Bar figures were plotted with ggplot2 to show the composition of rounding groups at each trench and within subgroups (length groups, weight groups and technological groups). Function drawrefits3viewweight.fl() was created to plot the three-dimensional maps of refit lines. The azimuths of refit lines were also plotted as rose diagrams and tested with Rayleigh and Kuiper test.
 
 ## Spatial analysis
 
@@ -30,11 +30,11 @@ Function kdensitymap.xy() would plot the kernel density surfaces of data input, 
 
 localGplot() could calculate and plot the local autocorrelations of input data, thus the rounding, length and weight of lithic artefacts were considered here.
 
-chisquaretest.2half.fl() was aim to automatically seperated the trench vertically (upper and lower), transversally (west and east) and horizontally (north and south) from the middle into two halves, and the frequency of fossils and lithic artifacts was summed for each part and then compared by chi-square test.
+chisquaretest.2half.fl() aimed to automatically separate the trench vertically (upper and lower), transversally (west and east) and horizontally (north and south) from the middle into two halves, and the frequency of fossils and lithic artefacts was summed for each part and then compared by chi-square test.
 
 ## Fabric analysis
 
-In this part, two-dimensional long-axis orientation and three-dimensional orientation and degrees were analysed. Function CurrayL() was created to calculated the Curray' L index. 2D long-axis orientations were plot as rose diagrams and tested with Rayleigh and Kuiper test, while results of strength C, flatness index, cluster-girdle index and K index were plotted in bar figure with ggplot2.
+In this part, two-dimensional long-axis orientation and three-dimensional orientation and degrees were analysed. Function CurrayL() was created to calculate the Curray' L index. 2D long-axis orientations were plotted as rose diagrams and tested with Rayleigh and Kuiper test, while results of strength C, flatness index, cluster-girdle index and K index were plotted in bar figure with ggplot2.
 
 ## R Session Info
 
@@ -47,7 +47,6 @@ locale:
 [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 
 time zone: Europe/London
-tzcode source: internal
 
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods  
