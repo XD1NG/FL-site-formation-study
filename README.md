@@ -92,3 +92,5 @@ loaded via a namespace (and not attached):
 [64] gridExtra_2.3         checkmate_2.2.0       spatstat.sparse_3.0-2
 [67] mgcv_1.9-1            xfun_0.40             pkgconfig_2.0.3      
 ```
+## Licence
+CC BY 4.0
