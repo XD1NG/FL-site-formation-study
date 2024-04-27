@@ -17,7 +17,7 @@ library(ggridges)
 
 ##Read data
 setwd("/Users/XinDing/r")
-alldata <- read.csv(file="FL_data.csv", header=TRUE, na="NA", fileEncoding="UTF-8")
+alldata <- read.csv(file="FL_data/FL_basic data.csv", header=TRUE, na="NA", fileEncoding="UTF-8")
 T1 <- alldata[alldata$Trench == "T1", ]
 T2 <- alldata[alldata$Trench == "T2", ]
 T3 <- alldata[alldata$Trench == "T3", ]
@@ -113,9 +113,9 @@ ggplot(data, aes(x=Technological.category, group=Roundness)) +
 
 ##Refitting
 #Read data
-T1_refits_weight <- read.csv("FL_Refit_T1_weight.csv", header=TRUE, na="NA", fileEncoding = "UTF-8")
+T1_refits_weight <- read.csv("FL_data/FL_Refit_T1_weight.csv", header=TRUE, na="NA", fileEncoding = "UTF-8")
 T1XY <- readOGR(dsn="FL_outline", layer="FL_T1_outline")
-TOK_refits_weight <- read.csv("FL_Refit_TOK_weight.csv", header=TRUE, na="NA", fileEncoding = "UTF-8")
+TOK_refits_weight <- read.csv("FL_data/FL_Refit_TOK_weight.csv", header=TRUE, na="NA", fileEncoding = "UTF-8")
 TOKXY <- readOGR(dsn="FL_outline", layer="FL_TOK_outline")
 
 #Create function and draw refit map
@@ -779,7 +779,7 @@ CurrayL(TOKCOLM)
 ##3 dimensional
 #Read data
 setwd("/Users/XinDing/r")
-fabric <- read.csv(file="FL_fabric.csv", header=TRUE, na="NA", fileEncoding="UTF-8")
+fabric <- read.csv(file="FL_data/FL_fabric.csv", header=TRUE, na="NA", fileEncoding="UTF-8")
 
 #Plot figure
 ggplot(fabric, aes(x=Type)) +
