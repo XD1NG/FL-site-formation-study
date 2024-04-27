@@ -779,7 +779,7 @@ CurrayL(TOKCOLM)
 ##3 dimensional
 #Read data
 setwd("/Users/XinDing/r")
-fabric <- read.csv(file="FL_data/FL_fabric.csv", header=TRUE, na="NA", fileEncoding="UTF-8")
+fabric <- read.csv(file="FL_data/FL_fabric index.csv", header=TRUE, na="NA", fileEncoding="UTF-8")
 
 #Plot figure
 ggplot(fabric, aes(x=Type)) +
