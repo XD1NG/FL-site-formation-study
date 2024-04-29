@@ -1,4 +1,4 @@
-renv::init(repos = "https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpackagemanager.posit.co%2Fcran%2F2023-10-03&data=05%7C02%7Cxin.ding.16%40ucl.ac.uk%7C5396216764284499ccea08dc545ef112%7C1faf88fea9984c5b93c9210a11d9a5c2%7C0%7C0%7C638478013958602799%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=Xvpcc0e%2BU0jse2oF%2FddXfsJ2wtiPisd1oIJbyFDwwFA%3D&reserved=0")
+renv::init(repos = "https://packagemanager.posit.co/cran/2023-10-03")
 
 library(maptools)
 library(spatstat)
