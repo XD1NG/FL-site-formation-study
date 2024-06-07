@@ -1,6 +1,8 @@
 # Deciphering site formation processes in lakeshore environments: a case study of Early Pleistocene site of Feiliang (Nihewan Basin, China): data and scripts
 
-This repository contains the data and R scripts used to explore the site formation processes at FL. Three parts of analysis are included in this study, including taphonomic analysis, spatial analysis and fabric analysis.
+This repository contains the data and R scripts used to explore the site formation processes at FL in the following paper:
+Ding, X., Pei, S., Ma, D. et al. Deciphering site formation processes in lakeshore environments: a case study of early Pleistocene site of Feiliang (Nihewan Basin, China). Archaeol Anthropol Sci 16, 92 (2024). https://doi.org/10.1007/s12520-024-02003-7
+Three parts of analysis are included in this study, including taphonomic analysis, spatial analysis and fabric analysis.
 
 ## Data Sets and Data Preparation
 
